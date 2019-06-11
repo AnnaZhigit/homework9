@@ -1,5 +1,467 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	background-color: rgb(45, 45, 45);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+html {
+	height: 100%;
+}
+
 body {
 	margin: 0;
 	padding: 0;
+	height: 100%;
+}
+
+b {
+	font-weight: bold;
+}
+
+i {
+	font-style: italic;
+}
+
+h2 {
+	font-size: 22px;
+	font-weight: bold;
+	text-overflow: ellipsis;
+	width: 220px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+h4 {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+h1 {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.5;
+	font-style: italic;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	height: 120px;
+	padding-top: 40px;
+	box-sizing: border-box;
+	background-color: rgb(40, 40, 40);
+	color: rgb(155, 155, 155);
+	z-index: 5;
+}
+
+.wrapper {
+	max-width: 950px;
+	margin: 0 auto;
+}
+
+header .icons {
+	float: right;
+}
+
+.icons li {
+	display: inline-block;
+	padding: 5px;
+}
+
+.twitter a:before  {
+    content: url(./icon/twitter1.png);
+	}
+
+.facebook a:before {
+	content: url(./icon/facebook1.png);
+}
+
+.vimeo a:before {
+	content: url(./icon/vimeo1.png);
+}
+
+.behance a:before {
+	content: url(./icon/behance1.png);
+}
+
+.boll a:before {
+	content: url(./icon/boll1.png);
+}
+
+main {
+	padding: 120px 0 110px 0;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.information_block {
+	padding-top: 190px;
+	padding-bottom: 60px;
+	background-color: #202020;
+	color: rgb(155, 155, 155);
+}
+
+.slider_box {
+	background-color: rgb(40, 40, 40);
+}
+
+.slider_box .wrapper {
+	margin-bottom: -140px;
+} 
+
+.slider_button {
+	background-color: white;
+	border: none;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 50%;
+	width: 7px;
+	height: 7px;
+	padding: 0;
+}
+
+.slider_button:hover {
+	background-color:rgb(155, 155, 155)
+}
+
+.pagination {
+	text-align: center;
+}
+
+.headline {
+  	font-size: 24px;
+ 	font-family: "Georgia";
+  	line-height: 1.2;
+  	text-align: center;
+  	-moz-transform: scale(1.03, 1);
+  	-webkit-transform: scale(1.03, 1);
+  	-ms-transform: scale(1.03, 1);
+}
+
+.text_headline {
+	font-size: 15px;
+	line-height: 1.571;
+    text-align: left;
+}
+
+.author_quote {
+	font-size: 60px;
+	line-height: 1.571;
+}
+
+.text_about_me h2:before {
+	content: url(./icon/user.png);
+	padding-right: 5px;
+}
+
+.text_about_me{
+	float: left;
+	width: 33%;
+	padding: 22px;
+	box-sizing: border-box;
+}
+
+.text_services h2:before {
+	content: url(./icon/settings.png);
+	padding-right: 5px;
+}
+
+.text_services {
+	float: right;
+	width: 33%;
+	padding: 22px;
+	box-sizing: border-box;
+}
+
+.text_chat h2:before {
+	content: url(./icon/chat.png);
+	padding-right: 5px;
+}
+
+.text_chat {
+	margin-left: 33%;
+    margin-right: 33%;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.foto_block {
+	background-color: rgb(40, 40, 40);
+	padding-top: 80px;
+	padding-bottom: 90px;
+}
+
+.foto_block .wrapper {
+	clear: both;
+	overflow: auto;
+}
+
+.little_foto {
+	float: left;
+	width: 50%;	
+}
+
+.little_foto img:nth-child(odd) {
+	padding-right: 10px;
+	padding-bottom: 10px;
+	width: 50%;
+	box-sizing: border-box;
+}
+
+.little_foto img:nth-child(even) {
+	padding-bottom: 10px;
+	padding-right: 10px;
+	width: 49%;
+	box-sizing: border-box;
+}
 
 
+.big_foto {
+	float: right;
+	width: 50%;
+	position: relative;
+}
+
+.big_foto img {
+	padding-left: 10px;
+}
+
+.description_big_foto1 {
+	position: absolute;
+    bottom: 0;
+    display: none; 
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    vertical-align: middle;   
+}
+
+.big_foto:hover .description_big_foto1 {
+    display:block;
+    font-size: 15px;
+    font-family: "Georgia";
+    color: rgb(155, 155, 155);
+    line-height: 1.571;
+    text-align: left;
+    background-color: rgba(40,40,40,0.7); 
+}
+
+.description_big_foto1 button {
+	background-color: rgb(135, 135, 135);
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	color: white;
+	font-size: 15px;
+}
+
+.button_forward {
+	position: absolute;
+	margin: auto;
+    left: 400px;
+    top: 30px;
+    right: 15px;
+    bottom: 30px;
+}
+
+.button_back {
+	position: absolute;
+	margin: auto;
+    left: 15px;
+    top: 30px;
+    right: 420px;
+    bottom: 30px;
+}
+
+.contacts_block {
+	padding-top: 70px;
+	padding-bottom: 60px;
+	background-color: #202020;
+}
+
+.contacts_block .wrapper {
+	clear: both;
+	overflow: auto;
+}
+
+.contacts_block .contacts_form {
+	float: left;
+	width: 51%;
+	padding-right: 22px;
+	box-sizing: border-box;
+}
+
+.contacts_input_icon {
+	position: absolute;
+	width: 39px;
+	height: 39px;
+	margin: auto;
+    left: 0;
+    top: 4px;
+    bottom: 0;
+	background-repeat: no-repeat; 
+}
+
+.name_icon {
+	background-image: url(./icon/name.png);
+}
+
+.email_icon {
+	background-image: url(./icon/email.png);
+}
+
+.web_icon {
+	background-image: url(./icon/web.png);
+}
+
+.contacts_block .contacts_description {
+	float: right;
+	width: 49%;
+}
+
+input {
+	display: block;
+	width: 100%;
+	min-height: 50px;
+	background-color: rgb(40, 40, 40); 
+	font-size: 15px;
+	font-family: "Georgia";
+	color: rgb(135, 135, 135);
+	font-style: italic;
+	line-height: 1.375;
+	text-align: left;
+	padding-left: 40px;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+}
+
+.input_wrapper {
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+textarea {
+	display: block;
+	width: 100%;
+	min-height: 160px;
+	background-color: rgb(40, 40, 40); 
+	font-size: 15px;
+	font-family: "Georgia";
+	color: rgb(135, 135, 135);
+	font-style: italic;
+	line-height: 1.375;
+	text-align: left;
+	border: none;
+	outline: none;
+	resize: none;
+	margin-bottom: 30px;
+}
+
+button {
+	width: 125px;
+	height: 45px;
+	color: rgb(135, 135, 135);
+	font-size: 18px;
+    font-family: "Georgia";
+    background-color: rgb(40, 40, 40);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(32, 32, 32);
+}
+
+
+.author {
+	position: relative;
+	font-size: 15px;
+	font-family: "Georgia";
+	color: rgb(155, 155, 155);
+	line-height: 1.571;
+	text-align: left; 
+}
+
+.author_foto {
+	float: left;
+	margin-right: 15px;
+    margin-bottom: 45px;
+}
+
+.about_me {
+	display: inline; 
+	width: 275px;	
+}
+
+.contact {
+	clear: both;
+}
+
+footer {
+	position: relative;
+	margin: -110px auto 0 auto;
+	height: 110px;
+	padding-top: 40px;
+	background-color: #202020;
+	color: rgb(155, 155, 155);
+}
+
+footer .icons {
+	float: right;
+}
+
+footer .wrapper {
+	border-top: solid; 
+	padding-top: 40px;
+	font-size: 14px;
+}
